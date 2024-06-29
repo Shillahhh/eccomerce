@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENIM MALE</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">CASUAL WEAR</div>
+        <a href="./cart.html"><div class="Cart"><i class="fa-solid fa-cart-shopping"></i>
+        <h1 class="total-quantity">1</h1></div></a>
+    </div>
+    <div class="description">
+        <div class="img"><img src="./DENIM/pexels-photo-8594331.jpeg" alt=""></div>
+        <div class="right">
+            <div class="name">DENIM MALE</div>
+            <div class="price">4500Ksh</div>
+            <p class="size">SIZE</p>
+            <p class="select">Select One Size:</p>
+            <br>
+            <button class="option-button" onclick="selectOption('S')">S</button>
+            <button class="option-button" onclick="selectOption('M')">M</button>
+            <button class="option-button" onclick="selectOption('L')">L</button>
+            <button class="option-button" onclick="selectOption('XL')">XL</button>
+            <button class="option-button" onclick="selectOption('2XL')">2XL</button>
+            <br>
+            <br>
+            <p>Selected size: <span id="selectedOption"></span></p>
+            <br>
+            <p>QUANTITY:</p>
+                <br>
+                <div class="quantity-items">
+                    <button type="button" onclick="decreaseQuantity()">-</button>
+                    <p id="quantity">1</p>
+                    <button type="button" onclick="increaseQuantity()">+</button>
+                </div>
+            <button class="btn-add" onclick="addToCart('DENIM MALE', '4500', 'XL', '1', './DENIM/pexels-photo-8594331.jpeg')">ADD TO CART</button>
+        </div>
+    </div>
+    <div class="others">
+        <div class="title">YOU MAY ALSO LIKE;</div>
+        <div class="products-sec">
+            <div class="img">
+                <a href="./longsuit.html"><img src="./DENIM/pexels-photo-6770907.webp" alt=""></a>
+                <h2>LONG SUIT DENIM</h2>
+                <p>4000Ksh</p>
+            </div>
+            <div class="img">
+                <a href="./denimsuits.html"><img src="./DENIM/pexels-photo-7206287.jpeg" alt=""></a>
+                <h2>DENIM SUITS</h2>
+                <p>3500Ksh</p>
+            </div>
+            <div class="img">
+                <a href="./fadedenim.html"><img src="./DENIM/pexels-photo-13535620.jpeg" alt=""></a>
+                <h2>FADE DENIM</h2>
+                <p>2500Ksh</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selectOption(option) {
+          document.getElementById('selectedOption').innerText = option;
+        }
+      </script>
+      <script src="./app.js"></script>
+</body>
+</html>
